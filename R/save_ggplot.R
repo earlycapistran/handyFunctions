@@ -7,7 +7,7 @@
 #'
 #' @param filename name for the file that will be saved
 #' @param plot_object a ggplot object
-#' @param path filepath to save the plot
+#' @param path filepath to save file
 #' @return saves ggplot in chosen location
 #'
 
@@ -18,8 +18,6 @@ save_ggplot <- function(filename,
                         height = 20,
                         units = "cm",
                         dpi = 300) {
-  # Load the ggplot2 library
-  library(ggplot2)
 
   # Save the boxplot as an image file
   ggsave(filename,
