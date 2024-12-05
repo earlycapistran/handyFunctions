@@ -10,6 +10,7 @@
 #' @param path filepath to save file
 #' @return saves ggplot in chosen location
 #'
+#'@export
 
 save_ggplot <- function(filename,
                         plot_object,

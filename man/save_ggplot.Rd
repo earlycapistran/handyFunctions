@@ -19,7 +19,7 @@ save_ggplot(
 
 \item{plot_object}{a ggplot object}
 
-\item{path}{filepath to save the plot}
+\item{path}{filepath to save file}
 }
 \value{
 saves ggplot in chosen location
