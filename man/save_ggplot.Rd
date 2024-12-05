@@ -2,7 +2,7 @@
 % Please edit documentation in R/save_ggplot.R
 \name{save_ggplot}
 \alias{save_ggplot}
-\title{Saves ggplot objects as .svg at a high resolution}
+\title{Save a ggplot Object as an SVG File at High Resolution}
 \usage{
 save_ggplot(
   plot_object,
@@ -15,25 +15,30 @@ save_ggplot(
 )
 }
 \arguments{
-\item{plot_object}{a ggplot object}
+\item{plot_object}{A \code{ggplot} object to be saved.}
 
-\item{filename}{name for the file that will be saved}
+\item{filename}{The name of the file in which the plot will be saved. The name should end with the \code{.svg} extension.}
 
-\item{path}{filepath to save file}
+\item{path}{The directory path where the file will be saved.}
+
+\item{width}{The width of the saved plot (default is 20).}
+
+\item{height}{The height of the saved plot (default is 20).}
+
+\item{units}{The units for the width and height (default is "cm"). Common options include "in", "cm", and "mm".}
+
+\item{dpi}{The resolution of the saved plot in dots-per-inch (default is 300).}
 }
 \value{
-saves ggplot in chosen location
+None. The function saves the plot to the specified file.
 }
 \description{
-Saves ggplot objects as .svg at a high resolution
+This function saves a \code{ggplot} object to a specified directory as a high-resolution SVG file.
 }
 \examples{
-# Create a simple ggplot object
+\dontrun{
+library(ggplot2)
 plot_object <- ggplot(mtcars, aes(wt, mpg)) + geom_point()
-# Define a filename with .svg extension
-filename <- "example_plot.svg"
-# Use a temporary directory or specify a path
-path <- tempdir()  # Using temp directory for simplicity
-# Call the function to save the plot
-save_ggplot(filename, plot_object, path)
+save_ggplot(plot_object, "example_plot.svg", tempdir())
+}
 }
