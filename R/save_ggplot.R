@@ -5,9 +5,9 @@
 
 #' Saves ggplot objects as .svg at a high resolution
 #'
-#' @param filename
-#' @param plot_object
-#' @param path
+#' @param filename name for the file that will be saved
+#' @param plot_object a ggplot object
+#' @param path filepath to save the plot
 #' @return saves ggplot in chosen location
 #'
 

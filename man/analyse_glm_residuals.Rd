@@ -10,14 +10,11 @@ variance, a Runs test for randomness, and a t-test for mean zero.}
 \usage{
 analyse_glm_residuals(glm_object)
 }
-\arguments{
-\item{glm_object}{}
-}
 \value{
 Residual plots: normality, residuals vs. fitted data, ACF plot
 
 Residual tests: Mean zero, Shapiro-Wilk normality test, Levene Test for
-homogeneity of variance, and Ljung-Box test for autocorrelation(https://otexts.com/fpp2/residuals.html)
+homogeneity of variance, and Ljung-Box test for autocorrelation
 }
 \description{
 This function evaluates residuals from 'glm' model objects. It returns

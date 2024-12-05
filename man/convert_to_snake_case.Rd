@@ -18,3 +18,16 @@ by underscores and all strings converted to lowercase.
 This function replaces spaces with underscores and
 converts all strings in a dataframe.to lowercase
 }
+\examples{
+input_df <- data.frame(
+  Name = c("Fulano A", "Sutano B", "Merengano C"),
+  Age = c(25, 30, 35),
+  City = c("New York", "Mexico City", "Lima"),
+  df
+)
+
+# Replace spaces and convert to lowercase in the dataframe
+output_df <- replace_spaces_lowercase_df(input_df)
+print(output_df)
+
+}
