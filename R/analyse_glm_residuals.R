@@ -9,7 +9,7 @@
 #' provides a Shapiro-Wilk normality test, Levene test for homogeneity of
 #' variance, a Runs test for randomness, and a t-test for mean zero.
 #'
-#' @param glm_object
+#' @param glm_object A glm model object
 #' @return Residual plots: normality, residuals vs. fitted data, ACF plot
 #'
 #' Residual tests: Mean zero, Shapiro-Wilk normality test, Levene Test for

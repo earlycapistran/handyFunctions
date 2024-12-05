@@ -14,6 +14,13 @@ save_ggplot(
   dpi = 300
 )
 }
+\arguments{
+\item{filename}{name for the file that will be saved}
+
+\item{plot_object}{a ggplot object}
+
+\item{path}{filepath to save the plot}
+}
 \value{
 saves ggplot in chosen location
 }

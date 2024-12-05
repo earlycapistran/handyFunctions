@@ -10,6 +10,9 @@ variance, a Runs test for randomness, and a t-test for mean zero.}
 \usage{
 analyse_glm_residuals(glm_object)
 }
+\arguments{
+\item{glm_object}{A glm model object}
+}
 \value{
 Residual plots: normality, residuals vs. fitted data, ACF plot
 
