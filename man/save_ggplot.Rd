@@ -5,8 +5,8 @@
 \title{Saves ggplot objects as .svg at a high resolution}
 \usage{
 save_ggplot(
-  filename,
   plot_object,
+  filename,
   path,
   width = 20,
   height = 20,
@@ -15,9 +15,9 @@ save_ggplot(
 )
 }
 \arguments{
-\item{filename}{name for the file that will be saved}
-
 \item{plot_object}{a ggplot object}
+
+\item{filename}{name for the file that will be saved}
 
 \item{path}{filepath to save file}
 }
@@ -26,4 +26,14 @@ saves ggplot in chosen location
 }
 \description{
 Saves ggplot objects as .svg at a high resolution
+}
+\examples{
+# Create a simple ggplot object
+plot_object <- ggplot(mtcars, aes(wt, mpg)) + geom_point()
+# Define a filename with .svg extension
+filename <- "example_plot.svg"
+# Use a temporary directory or specify a path
+path <- tempdir()  # Using temp directory for simplicity
+# Call the function to save the plot
+save_ggplot(filename, plot_object, path)
 }
