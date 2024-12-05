@@ -16,7 +16,7 @@
 #'   Name = c("Fulano A", "Sutano B", "Merengano C"),
 #'   Age = c(25, 30, 35),
 #'   City = c("New York", "Mexico City", "Lima"),
-#'   "df
+#'   df
 #' )
 #'
 #' # Replace spaces and convert to lowercase in the dataframe
